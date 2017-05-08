@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viweport" content="width=device-width, initial-scale=10"/>
+    <title> EXEMPLO JQUERY</title>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){});
+
+    </script>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      var valorSelecionado;
+      var elemento = documento.getElementoByTagName('input');
+      for(var n=0;n<elemento.length;n++){
+        if(elemento[n].type=='radio'&&
+           elemento[n].name=='tEsporte'&&
+           elemento[n].checked){
+           valorSelecionado=elemento[n].value;
+           }
+      }
+
+    </script>
+
+    <form class="#" method="get">
+      <fieldset>
+        <legend>Exemplo</legend>
+        <div>
+          <label for="">  Futebol</label>
+          <input type="radio" name="tEsporte" value="fut" id="iEsporteFut" checked="checked">
+        </div>
+        <div>
+          <label for="">Volei</label>
+          <input type="radio" name="tEsporte" value="volei" id="iEsporteVolei" checked="checked">
+        </div>
+        <div>
+          <label for="">Basquete</label>
+          <input type="radio" name="tEsporte" value="basq" id="iEsporteBasq" checked="checked">
+        </div>
+
+      </fieldset>
+
+    </form>
+
+  </body>
+</html>
